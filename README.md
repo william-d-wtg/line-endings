@@ -89,3 +89,13 @@ $ git rm --cached -rf .
 # Re-check them out, this time with correct line endings
 $ git reset --hard HEAD
 ```
+
+## A note about binary files
+
+If you have binary files in your repository, you should mark them as such using the `.gitattributes` file so that Git doesn't attempt to normalize line endings and corrupt the files. For example:
+
+```
+# Exclude binary files
+*.png binary
+*.dll binary
+```
