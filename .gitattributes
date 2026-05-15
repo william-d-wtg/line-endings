@@ -1,0 +1,6 @@
+# Automatic handling for text files which includes
+# automatic newline conversion cross platform.
+* text=auto
+
+# Ensure lf.txt always presents with Unix line endings
+lf.txt text eol=lf
